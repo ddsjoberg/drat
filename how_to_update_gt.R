@@ -1,12 +1,13 @@
-# pull latest updates from rstudio/gt
-# go to the gh-pages branch
+
+# 1. Pull latest updates from rstudio/gt
+# 2. Switch drat branch gh-pages
 
 # location to store build of gt
 build_dir <- file.path(tempdir())
 
 # create source package ---------------------------------------------
 # build gt
-devtools::build(pkg = "C:/Users/sjobergd/Documents/GitHub/gt",
+devtools::build(pkg = "C:/Users/sjobergd/GitHub/gt",
                 path = build_dir)
 
 # path to *.tar.gz
@@ -19,7 +20,7 @@ drat::insertPackage(pkg_path,
 
 # crate binary package -----------------------------------------------
 # build gt
-devtools::build(pkg = "C:/Users/sjobergd/Documents/GitHub/gt",
+devtools::build(pkg = "C:/Users/sjobergd/GitHub/gt",
                 path = build_dir,
                 binary = TRUE)
 
