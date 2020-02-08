@@ -7,7 +7,7 @@ build_dir <- file.path(tempdir())
 
 # create source package ---------------------------------------------
 # build gt
-devtools::build(pkg = "C:/Users/sjobergd/GitHub/gt",
+devtools::build(pkg = "C:/Users/sjobergd/Documents/GitHub/gt",
                 path = build_dir)
 
 # path to *.tar.gz
@@ -20,7 +20,7 @@ drat::insertPackage(pkg_path,
 
 # crate binary package -----------------------------------------------
 # build gt
-devtools::build(pkg = "C:/Users/sjobergd/GitHub/gt",
+devtools::build(pkg = "C:/Users/sjobergd/Documents/GitHub/gt",
                 path = build_dir,
                 binary = TRUE)
 
